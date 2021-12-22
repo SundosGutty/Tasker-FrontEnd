@@ -1,0 +1,122 @@
+/* Media queries Breakpoint mixins */
+
+@mixin for-mobile-layout {
+  @media (max-width: $break-narrow) {
+    @content;
+  }
+}
+
+@mixin to-icon($content) {
+  &:before {
+    content: $content;
+  }
+}
+
+@mixin for-narrow-layout {
+  @media (min-width: $break-narrow) {
+    @content;
+  }
+}
+
+@mixin for-normal-layout {
+  @media (min-width: $break-normal) {
+    @content;
+  }
+}
+
+@mixin for-wide-layout {
+  @media (min-width: $break-wide) {
+    @content;
+  }
+}
+
+@mixin layoutGTC($max) {
+  grid-template-columns:
+    minmax($layoutPadding, 1fr)
+    minmax(auto, $max)
+    minmax($layoutPadding, 1fr);
+}
+
+/* Media  Mixins */
+
+//aspect ratio mixin
+@mixin aspect-ratio($width: 1, $height: 1) {
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Mixin for removing hover efects on iphone screen
+@mixin hover-supported {
+  @media not all and (pointer: coarse) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+//task-status mixin
+@mixin task-status($main-primary, $main-secondary) {
+  $background: #f5f6f8;
+  $corner: 50px;
+  $transition: 0.3s;
+  background: $main-primary;
+  color: $main-secondary;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 0 rem(20px);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: $corner * 0;
+    height: $corner * 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: $main-secondary;
+    transition: $transition;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: $corner;
+    height: $corner;
+    position: absolute;
+    right: $corner * -1;
+    top: $corner * -1;
+    background: $background;
+    transform: rotate(45deg);
+    transition: $transition * 0.8;
+  }
+  &:hover {
+    &::before {
+      width: $corner * 0.2;
+      height: $corner * 0.2;
+    }
+    &::after {
+      width: $corner * 1.15;
+      height: $corner * 1.15;
+      right: $corner * -0.9;
+      top: $corner * -0.9;
+    }
+  }
+}

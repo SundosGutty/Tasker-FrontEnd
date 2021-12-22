@@ -1,0 +1,11 @@
+.task-list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    .fa.fa-caret-down {
+        margin-right: rem(10px);
+        margin-left: 1.9rem;
+    }
+
+}

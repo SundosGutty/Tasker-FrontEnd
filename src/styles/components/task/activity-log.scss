@@ -1,0 +1,122 @@
+.activity-log {
+    margin-top: 20px;
+    .actions {
+        background-color: rgba(128, 128, 128, 0.15);
+        margin-bottom: 40px;
+
+        p{
+            transform: translateY(17%);
+        }
+
+        div{
+            float: right;
+        }
+
+    }
+
+    .log-header {
+        .filter-btn {
+            button {
+                display: flex;
+                transform: translateY(-50%);
+                background-color: #0073ea;
+                color: white;
+                text-align: left;
+                padding: 10px;
+                height: 40px;
+                width: 110px;
+                margin-right: 10px;
+                & > * {
+                    transform: translateY(50%);
+                    margin-left: 10px;
+                    color: white;
+                    font-size: 11px;
+                }
+            }
+
+            span {
+                transform: translateY(-25%);
+
+                p {
+                    padding-left: 10px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .export-sync {
+            margin-left: 55%;
+            gap: 25px;
+        }
+    }
+    .activity-item {
+        display: flex;
+        flex: 1.5 0 0;
+        padding: 10px 0 0;
+        height: 55px;
+        border-bottom: 1px solid rgba(139, 139, 139, 0.185);
+
+        & > * {
+            margin-left: 20px;
+        }
+        .log-time {
+            i {
+                font-size: 14px;
+            }
+            span {
+                font-size: 14px;
+                font-family: roboto;
+                padding-left: 5px;
+                letter-spacing: 1px;
+            }
+        }
+        .user-img {
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+        }
+        p {
+            min-width: 130px;
+            text-align: left;
+        }
+
+        .type {
+            min-width: 150px;
+            & > * {
+                font-size: 15px;
+            }
+        }
+        .tag-container {
+            gap: 10px;
+
+            & > * {
+                text-transform: capitalize;
+                color: wheat;
+                padding-top: 4px;
+            }
+            .log-tag {
+                height: 40px;
+                width: 80px;
+                padding-top: 6px;
+                border-radius: 2px;
+            }
+
+            .log-done {
+                background-color: #30c875;
+            }
+            .log-stuck {
+                background-color: #e2445c;
+            }
+        }
+        i {
+            color: rgba(167, 167, 167, 0.486);
+        }
+
+        .name-container {
+            i {
+                transform: translateY(-40%);
+                margin: 0 20px 0 40px;
+            }
+        }
+    }
+}

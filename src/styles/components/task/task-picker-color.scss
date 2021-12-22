@@ -1,0 +1,90 @@
+$done-color : #30c875;
+$work-color : #fbab3e;
+$stuck-color : #e2445c;
+$hold-color: #3886BB;
+$empty-color : rgb(167, 167, 167);
+$title-color : rgb(255, 255, 255);
+
+.empty {
+  $prime-color: rgb(167, 167, 167);
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+
+.done {
+  $prime-color: $done-color;
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+
+.hold {
+  $prime-color: $hold-color;
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+
+
+.work {
+  $prime-color: $work-color;
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+.stuck {
+  $prime-color: $stuck-color;
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+.high {
+  $prime-color: #BB3455;
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+
+.medium {
+  $prime-color: #EA3A89;
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+.low {
+  $prime-color: #7052CA;
+  @include task-status($prime-color, darken($prime-color, 30%));
+  color : $title-color;
+}
+.empty-bg {
+  background-color: $empty-color;
+  color : $title-color;
+}
+
+.done-bg {
+  background-color: $done-color;
+  color : $title-color;
+}
+
+.work-bg {
+  background-color: $work-color;
+  color : $title-color;
+}
+.stuck-bg {
+  background-color: $stuck-color;
+  color : $title-color;
+}
+
+.hold-bg {
+  background-color: $hold-color;
+  color : $title-color;
+}
+
+.high-bg {
+  background-color: #BB3455;
+  color : $title-color;
+}
+
+.medium-bg {
+  background-color: #EA3A89;
+  color : $title-color;
+}
+.low-bg {
+  background-color: #7052CA;
+  color : $title-color;
+}
+

@@ -1,0 +1,29 @@
+.home{
+    padding-top: 30px;
+    // background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    font-weight: bolder;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1{
+        margin: auto;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 25px;
+        color: #535768;
+        
+    }
+
+    .home-img{
+        width: 25%;
+        display: inline;
+    }
+ 
+}
+
+

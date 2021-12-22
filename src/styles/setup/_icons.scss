@@ -1,0 +1,182 @@
+.icon-filter {
+    font-family: monday;
+    @include to-icon("\f333");
+}
+.icon-person {
+    font-family: monday;
+    @include to-icon("\f1c7");
+}
+
+.icon-search {
+    font-family: monday;
+    color: white;
+    @include to-icon("\f3aa");
+}
+.icon-dotes {
+    font-family: monday;
+    color: #323338;
+    transform: rotate(180deg);
+    @include to-icon("\f311");
+}
+.icon-comment {
+    font-family: monday;
+    // color: #C5C7D0;
+    font-size: 18px;
+    @include to-icon("\f467");
+}
+
+.icon-circle {
+    font-family: monday;
+    @include to-icon("\f2df");
+}
+
+.icon-activities {
+    font-family: monday;
+    @include to-icon("\f468");
+}
+
+.icon-two-stars {
+    font-family: monday;
+    @include to-icon("\f28d");
+}
+
+.icon-main-table {
+    font-family: monday;
+    @include to-icon("\f420");
+}
+
+.icon-home {
+    font-family: monday;
+    @include to-icon("\f471");
+}
+
+.icon-arrow-down {
+    font-family: monday;
+    @include to-icon("\f106");
+}
+
+.icon-sort-up-down {
+    font-family: monday;
+    @include to-icon("\f3d4");
+}
+
+.icon-workspace {
+    font-family: monday;
+    color: white;
+    @include to-icon("\f105");
+}
+
+.icon-add-user {
+    font-family: monday;
+    color: white;
+    @include to-icon("\f3fb");
+}
+
+.icon-star {
+    font-family: monday;
+    @include to-icon("\f3dc");
+}
+
+.icon-star-yellow {
+    font-family: monday;
+    color: #ffcb00;
+    @include to-icon("\f3db");
+}
+
+.icon-info {
+    font-family: monday;
+    @include to-icon("\f345");
+}
+
+.icon-plus {
+    font-family: monday;
+    @include to-icon("\f47b");
+}
+
+.icon-calender {
+    font-family: monday;
+    @include to-icon("\f385");
+}
+
+.icon-kanban {
+    font-family: monday;
+    @include to-icon("\f359");
+}
+
+.icon-members {
+    font-family: monday;
+    @include to-icon("\f226");
+}
+
+.icon-clip {
+    font-family: monday;
+    @include to-icon("\f13b");
+}
+
+.icon-three-dots {
+    font-family: monday;
+    @include to-icon("\f311");
+}
+
+.icon-right-arrow {
+    font-family: monday;
+    @include to-icon("\f061");
+}
+
+.icon-bubble {
+    font-family: monday;
+    @include to-icon("\f075");
+}
+
+.icon-user {
+    font-family: monday;
+    color: #C5C7D0;
+    @include to-icon("\f1c7");
+}
+.icon-invite {
+    font-family: monday;
+    @include to-icon("\f3fb");
+}
+
+.icon-crown {
+    font-family: monday;
+    @include to-icon("\f266");
+}
+.icon-toggle-left {
+    font-family: monday;
+    @include to-icon("\f108");
+}
+.icon-toggle-right {
+    font-family: monday;
+    @include to-icon("\f109");
+}
+
+// .icon-format{
+//     font-family: monday;
+//     @include to-icon("\f105");
+// }
+
+// .icon-bold{
+//     font-family: monday;
+//     @include to-icon("\e903");
+// }
+
+// .icon-italic{
+//     font-family: monday;
+//     @include to-icon("\e915");
+// }
+
+// .icon-underline{
+//     font-family: monday;
+//     @include to-icon("\e924");
+// }
+
+// .icon-linethrough{
+//     font-family: monday;
+//     @include to-icon("\e907");
+// }
+
+// .icon-alignment{
+//     font-family: monday;
+//     @include to-icon("\e901");
+// }

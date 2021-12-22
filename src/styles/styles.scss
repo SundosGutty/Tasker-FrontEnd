@@ -1,0 +1,39 @@
+@import "setup/typography";
+@import "setup/variables";
+@import "setup/mixins";
+@import "setup/functions";
+@import "setup/icons";
+
+// BASICS
+@import "basics/helpers";
+@import "basics/base";
+@import "basics/layout";
+@import "basics/flex";
+
+// COMPONENTS
+@import "./components/main-app";
+@import "./components/home-page";
+@import "./components/main-nav";
+@import "./components/board-details";
+@import "./components/board-group";
+@import "./components/task/task-preview";
+@import "./components/task/task-list";
+@import "./components/task/task-details";
+@import "./components/task/task-updates";
+@import "./components/task/activity-log";
+@import "./components/task/task-picker-color";
+@import "./components/task/task-actions";
+@import "./components/list-dropdown";
+@import "./components/landing-page";
+@import "./components/board-actions";
+@import "./components/pop-up-nav";
+@import "./components/login-page";
+@import "./components/dashboard-charts";
+
+$fa-font-path: "./webfonts";
+
+@import "./scss/fontawesome.scss";
+@import "./scss/regular.scss";
+@import "./scss/solid.scss";
+@import "./scss/brands.scss";
+@import "./scss/v4-shims.scss";
